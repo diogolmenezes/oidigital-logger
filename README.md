@@ -4,13 +4,13 @@ A simple request/response log middleware (with body and headers) for express.
 
 ## Install
 
-`npm i express-request-logger --save`
+`npm i express-req-res-logger --save`
 
 ## Using
 
 ```javascript
 
-    const requestLogger = require('express-request-logger');
+    const requestLogger = require('express-req-res-logger');
     
     app.use(requestLogger({
         logger: myBunyanLogger.debug.bind(myBunyanLogger),

@@ -1,5 +1,5 @@
 {
-  "name": "express-request-logger",
+  "name": "express-req-res-logger",
   "keywords": [
     "express",
     "log",
