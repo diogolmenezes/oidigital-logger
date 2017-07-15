@@ -1,0 +1,40 @@
+{
+  "name": "express-request-logger",
+  "keywords": [
+    "express",
+    "log",
+    "request",
+    "response"
+  ],
+  "tags": [
+    "express",
+    "log",
+    "request",
+    "response"
+  ],
+  "version": "1.0.0",
+  "description": "A simple request/response log middleware for express",
+  "author": "Diogo Menezes <diogolmenezes@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogolmenezes/express-request-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diogolmenezes/express-request-logger/issues"
+  },
+  "homepage": "https://github.com/diogolmenezes/express-request-logger#readme",
+  "main": "lib/express-request-logger",
+  "scripts": {
+    "test": "clear;node_modules/mocha/bin/mocha -R spec --timeout 5000 "
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "pretty-format": "^20.0.3",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
