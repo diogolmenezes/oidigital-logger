@@ -17,13 +17,13 @@
   "author": "Diogo Menezes <diogolmenezes@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diogolmenezes/express-request-logger.git"
+    "url": "git+https://github.com/diogolmenezes/oidigital-logger.git"
   },
   "bugs": {
-    "url": "https://github.com/diogolmenezes/express-request-logger/issues"
+    "url": "https://github.com/diogolmenezes/oidigital-logger/issues"
   },
-  "homepage": "https://github.com/diogolmenezes/express-request-logger#readme",
-  "main": "lib/express-request-logger",
+  "homepage": "https://github.com/diogolmenezes/oidigital-logger#readme",
+  "main": "lib/logger",
   "scripts": {
     "test": "echo none"
   },
