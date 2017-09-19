@@ -1,5 +1,5 @@
 {
-  "name": "express-req-res-logger",
+  "name": "oidigital-logger",
   "keywords": [
     "express",
     "log",
@@ -13,7 +13,7 @@
     "response"
   ],
   "version": "1.0.1",
-  "description": "A simple request/response log middleware for express",
+  "description": "Oi digital log utils",
   "author": "Diogo Menezes <diogolmenezes@gmail.com>",
   "repository": {
     "type": "git",
