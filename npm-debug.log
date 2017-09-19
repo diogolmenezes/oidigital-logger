@@ -1,7 +1,7 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
-2 info using npm@4.1.2
-3 info using node@v7.6.0
+2 info using npm@3.10.9
+3 info using node@v6.9.2
 4 verbose publish [ '.' ]
 5 silly cache add args [ '.', null ]
 6 verbose cache add spec .
@@ -11,108 +11,98 @@
 7 silly cache add   escapedName: null,
 7 silly cache add   name: null,
 7 silly cache add   rawSpec: '.',
-7 silly cache add   spec: '/home/dmenezes/projetos/npm/express-request-logger',
+7 silly cache add   spec: '/home/diogomenezes/projetos/oidigital-logger',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /home/dmenezes/.npm/express-req-res-logger/1.0.0/package.tgz not in flight; packing
-9 verbose correctMkdir /home/dmenezes/.npm correctMkdir not in flight; initializing
-10 info lifecycle express-req-res-logger@1.0.0~prepublish: express-req-res-logger@1.0.0
-11 silly lifecycle express-req-res-logger@1.0.0~prepublish: no script for prepublish, continuing
-12 info lifecycle express-req-res-logger@1.0.0~prepare: express-req-res-logger@1.0.0
-13 silly lifecycle express-req-res-logger@1.0.0~prepare: no script for prepare, continuing
-14 verbose tar pack [ '/home/dmenezes/.npm/express-req-res-logger/1.0.0/package.tgz',
-14 verbose tar pack   '/home/dmenezes/projetos/npm/express-request-logger' ]
-15 verbose tarball /home/dmenezes/.npm/express-req-res-logger/1.0.0/package.tgz
-16 verbose folder /home/dmenezes/projetos/npm/express-request-logger
-17 verbose addLocalTarball adding from inside cache /home/dmenezes/.npm/express-req-res-logger/1.0.0/package.tgz
-18 verbose correctMkdir /home/dmenezes/.npm correctMkdir not in flight; initializing
-19 silly cache afterAdd express-req-res-logger@1.0.0
-20 verbose afterAdd /home/dmenezes/.npm/express-req-res-logger/1.0.0/package/package.json not in flight; writing
-21 verbose correctMkdir /home/dmenezes/.npm correctMkdir not in flight; initializing
-22 verbose afterAdd /home/dmenezes/.npm/express-req-res-logger/1.0.0/package/package.json written
-23 silly publish { name: 'express-req-res-logger',
-23 silly publish   keywords: [ 'express', 'log', 'request', 'response' ],
-23 silly publish   tags: [ 'express', 'log', 'request', 'response' ],
-23 silly publish   version: '1.0.0',
-23 silly publish   description: 'A simple request/response log middleware for express',
-23 silly publish   author: { name: 'Diogo Menezes', email: 'diogolmenezes@gmail.com' },
-23 silly publish   repository:
-23 silly publish    { type: 'git',
-23 silly publish      url: 'git+https://github.com/diogolmenezes/express-request-logger.git' },
-23 silly publish   bugs: { url: 'https://github.com/diogolmenezes/express-request-logger/issues' },
-23 silly publish   homepage: 'https://github.com/diogolmenezes/express-request-logger#readme',
-23 silly publish   main: 'lib/express-request-logger',
-23 silly publish   scripts: { test: 'echo none' },
-23 silly publish   license: 'MIT',
-23 silly publish   dependencies:
-23 silly publish    { 'lodash.has': '^4.5.2',
-23 silly publish      'lodash.set': '^4.3.2',
-23 silly publish      'pretty-format': '^20.0.3',
-23 silly publish      uuid: '^3.1.0' },
-23 silly publish   devDependencies: { chai: '^3.5.0', mocha: '^3.2.0' },
-23 silly publish   readme: '# Express Request Logger\n\nA simple request/response log middleware (with body and headers) for express.\n\n## Install\n\n`npm i express-req-res-logger --save`\n\n## Using\n\n```javascript\n\n    const requestLogger = require(\'express-req-res-logger\');\n    \n    app.use(requestLogger({\n        logger: myBunyanLogger.debug.bind(myBunyanLogger),\n        hide: [\'password\', \'secret\']\n    }));\n\n```\n\n## Parameters\n\n- logger - Function tha will save the log. Default is console.log function\n- hide - Array with properts that can not appear in the log. Default is [\'password\', \'senha\', \'secret\']\n\n## Example of output\n\n```\nREQUEST [129887cf-32f2-4f2a-900f-9c3d056cd2c8] [POST /login] [Object {\n  "body": Object {\n    "username": "username"\n    "password": "*****",\n  },\n  "headers": Object {\n    "accept": "*/*",\n    "accept-encoding": "gzip, deflate, br",\n    "accept-language": "pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2",\n    "cache-control": "no-cache",\n    "connection": "keep-alive",\n    "content-length": "24",\n    "content-type": "application/json",\n    "host": "localhost:3000",\n    "origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",\n    "postman-token": "04a4070e-5d12-0812-f9fb-474f2f91b7e7",\n    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",\n  },\n}]\n\nRESPONSE [200] para [129887cf-32f2-4f2a-900f-9c3d056cd2c8] [POST /login] [Arguments [ "Ok, its done!" ]] em 52.60 ms\n\n```',
-23 silly publish   readmeFilename: 'README.md',
-23 silly publish   gitHead: 'af73e3460b5f9091762323c5e2787a1410842045',
-23 silly publish   _id: 'express-req-res-logger@1.0.0',
-23 silly publish   _shasum: '22271a83266580f43e75ddffeed16c8b8aaaade9',
-23 silly publish   _from: '.' }
-24 info lifecycle express-req-res-logger@1.0.0~prepublishOnly: express-req-res-logger@1.0.0
-25 silly lifecycle express-req-res-logger@1.0.0~prepublishOnly: no script for prepublishOnly, continuing
-26 verbose getPublishConfig undefined
-27 silly mapToRegistry name express-req-res-logger
-28 silly mapToRegistry using default registry
-29 silly mapToRegistry registry https://registry.npmjs.org/
-30 silly mapToRegistry data Result {
-30 silly mapToRegistry   raw: 'express-req-res-logger',
-30 silly mapToRegistry   scope: null,
-30 silly mapToRegistry   escapedName: 'express-req-res-logger',
-30 silly mapToRegistry   name: 'express-req-res-logger',
-30 silly mapToRegistry   rawSpec: '',
-30 silly mapToRegistry   spec: 'latest',
-30 silly mapToRegistry   type: 'tag' }
-31 silly mapToRegistry uri https://registry.npmjs.org/express-req-res-logger
-32 verbose publish registryBase https://registry.npmjs.org/
-33 silly publish uploading /home/dmenezes/.npm/express-req-res-logger/1.0.0/package.tgz
-34 verbose request uri https://registry.npmjs.org/express-req-res-logger
-35 verbose request sending authorization for write operation
-36 info attempt registry request try #1 at 16:51:11
-37 verbose request using bearer token for auth
-38 verbose request id cea407bbeb75b899
-39 http request PUT https://registry.npmjs.org/express-req-res-logger
-40 http 403 https://registry.npmjs.org/express-req-res-logger
-41 verbose headers { 'content-type': 'application/json',
-41 verbose headers   'cache-control': 'max-age=300',
-41 verbose headers   'content-length': '95',
-41 verbose headers   'accept-ranges': 'bytes',
-41 verbose headers   date: 'Sat, 15 Jul 2017 19:51:13 GMT',
-41 verbose headers   via: '1.1 varnish',
-41 verbose headers   connection: 'keep-alive',
-41 verbose headers   'x-served-by': 'cache-atl6249-ATL',
-41 verbose headers   'x-cache': 'MISS',
-41 verbose headers   'x-cache-hits': '0',
-41 verbose headers   'x-timer': 'S1500148273.912575,VS0,VE678',
-41 verbose headers   vary: 'Accept-Encoding, Accept' }
-42 verbose request invalidating /home/dmenezes/.npm/registry.npmjs.org/express-req-res-logger on PUT
-43 error publish Failed PUT 403
-44 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : express-req-res-logger
-44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
-44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
-44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
-44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
-44 verbose stack     at emitTwo (events.js:106:13)
-44 verbose stack     at Request.emit (events.js:192:7)
-44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
-44 verbose stack     at emitOne (events.js:96:13)
-44 verbose stack     at Request.emit (events.js:189:7)
-44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
-45 verbose statusCode 403
-46 verbose pkgid express-req-res-logger
-47 verbose cwd /home/dmenezes/projetos/npm/express-request-logger
-48 error Linux 4.4.0-81-generic
-49 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-50 error node v7.6.0
-51 error npm  v4.1.2
-52 error code E403
-53 error "You cannot publish over the previously published version 1.0.0." : express-req-res-logger
-54 error If you need help, you may report this error at:
-54 error     <https://github.com/npm/npm/issues>
-55 verbose exit [ 1, true ]
+8 verbose addLocalDirectory /home/diogomenezes/.npm/oidigital-logger/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/diogomenezes/.npm correctMkdir not in flight; initializing
+10 info lifecycle oidigital-logger@1.0.1~prepublish: oidigital-logger@1.0.1
+11 silly lifecycle oidigital-logger@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/diogomenezes/.npm/oidigital-logger/1.0.1/package.tgz',
+12 verbose tar pack   '/home/diogomenezes/projetos/oidigital-logger' ]
+13 verbose tarball /home/diogomenezes/.npm/oidigital-logger/1.0.1/package.tgz
+14 verbose folder /home/diogomenezes/projetos/oidigital-logger
+15 verbose addLocalTarball adding from inside cache /home/diogomenezes/.npm/oidigital-logger/1.0.1/package.tgz
+16 verbose correctMkdir /home/diogomenezes/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd oidigital-logger@1.0.1
+18 verbose afterAdd /home/diogomenezes/.npm/oidigital-logger/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/diogomenezes/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/diogomenezes/.npm/oidigital-logger/1.0.1/package/package.json written
+21 silly publish { name: 'oidigital-logger',
+21 silly publish   keywords: [ 'express', 'log', 'request', 'response' ],
+21 silly publish   tags: [ 'express', 'log', 'request', 'response' ],
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'Oi digital log utils',
+21 silly publish   author: { name: 'Diogo Menezes', email: 'diogolmenezes@gmail.com' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/diogolmenezes/oidigital-logger.git' },
+21 silly publish   bugs: { url: 'https://github.com/diogolmenezes/oidigital-logger/issues' },
+21 silly publish   homepage: 'https://github.com/diogolmenezes/oidigital-logger#readme',
+21 silly publish   main: 'lib/logger',
+21 silly publish   scripts: { test: 'echo none' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies:
+21 silly publish    { 'lodash.has': '^4.5.2',
+21 silly publish      'lodash.set': '^4.3.2',
+21 silly publish      'pretty-format': '^20.0.3',
+21 silly publish      uuid: '^3.1.0' },
+21 silly publish   devDependencies: { chai: '^3.5.0', mocha: '^3.2.0' },
+21 silly publish   readme: '# Express Request Logger\n\nA simple request/response log middleware (with body and headers) for express.\n\n## Install\n\n`npm i express-req-res-logger --save`\n\n## Using\n\n```javascript\n\n    const requestLogger = require(\'express-req-res-logger\');\n    \n    app.use(requestLogger({\n        logger: myBunyanLogger.debug.bind(myBunyanLogger),\n        hide: [\'password\', \'secret\']\n    }));\n\n```\n\n## Parameters\n\n- logger - Function tha will save the log. Default is console.log function\n- hide - Array with properts that can not appear in the log. Default is [\'password\', \'senha\', \'secret\']\n\n## Example of output\n\n```\nREQUEST [129887cf-32f2-4f2a-900f-9c3d056cd2c8] [POST /login] [Object {\n  "body": Object {\n    "username": "username"\n    "password": "*****",\n  },\n  "headers": Object {\n    "accept": "*/*",\n    "accept-encoding": "gzip, deflate, br",\n    "accept-language": "pt-BR,pt;q=0.8,en-US;q=0.6,en;q=0.4,es;q=0.2",\n    "cache-control": "no-cache",\n    "connection": "keep-alive",\n    "content-length": "24",\n    "content-type": "application/json",\n    "host": "localhost:3000",\n    "origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",\n    "postman-token": "04a4070e-5d12-0812-f9fb-474f2f91b7e7",\n    "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36",\n  },\n}]\n\nRESPONSE [200] para [129887cf-32f2-4f2a-900f-9c3d056cd2c8] [POST /login] [Arguments [ "Ok, its done!" ]] em 52.60 ms\n\n```',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '6a1bfd5a8865d89293e26e8a0241904eb3d35586',
+21 silly publish   _id: 'oidigital-logger@1.0.1',
+21 silly publish   _shasum: '642f44c637fbd8bbe8ccfc8d28417df2fa84b362',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name oidigital-logger
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://dadhx05.interno:8081/repository/npm-group/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'oidigital-logger',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'oidigital-logger',
+26 silly mapToRegistry   name: 'oidigital-logger',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://dadhx05.interno:8081/repository/npm-group/oidigital-logger
+28 verbose publish registryBase http://dadhx05.interno:8081/repository/npm-group/
+29 silly publish uploading /home/diogomenezes/.npm/oidigital-logger/1.0.1/package.tgz
+30 verbose request uri http://dadhx05.interno:8081/repository/npm-group/oidigital-logger
+31 verbose request always-auth set; sending authorization
+32 info attempt registry request try #1 at 13:42:06
+33 verbose request using bearer token for auth
+34 verbose request id 2a025c644ae645ec
+35 http request PUT http://dadhx05.interno:8081/repository/npm-group/oidigital-logger
+36 http 400 http://dadhx05.interno:8081/repository/npm-group/oidigital-logger
+37 verbose headers { date: 'Tue, 19 Sep 2017 16:42:06 GMT',
+37 verbose headers   server: 'Nexus/3.2.0-01 (OSS)',
+37 verbose headers   'x-frame-options': 'SAMEORIGIN',
+37 verbose headers   'x-content-type-options': 'nosniff',
+37 verbose headers   'content-length': '0',
+37 verbose headers   'proxy-connection': 'keep-alive',
+37 verbose headers   connection: 'keep-alive' }
+38 verbose request invalidating /home/diogomenezes/.npm/dadhx05.interno_8081/repository/npm-group/oidigital-logger on PUT
+39 error publish Failed PUT 400
+40 verbose stack Error: 400 Bad Request
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:253:9)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 400
+42 verbose cwd /home/diogomenezes/projetos/oidigital-logger
+43 error Linux 3.10.0-327.36.1.el7.x86_64
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v6.9.2
+46 error npm  v3.10.9
+47 error code E400
+48 error 400 Bad Request
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
